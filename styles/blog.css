@@ -1,4 +1,9 @@
 /* DEVELOPER: Elijah Nutt, IS117-006, Spring 2022 */
+@media (max-width: 1000px) {
+    body h1, h2{
+        font-size: 200% !important;
+    }
+}
 html {
     background-color: #EAE8FF;
 }
