@@ -1,4 +1,12 @@
 /* DEVELOPER: Elijah Nutt, IS117-006, Spring 2022 */
+@media (max-width: 1000px) {
+    .jumbotron {
+        font-size: 200% !important;
+    }
+    .card{
+        width: 100% !important;
+    }
+}
 html {
     background-color: #EAE8FF;
 }
