@@ -1,0 +1,87 @@
+/* DEVELOPER: Elijah Nutt, IS117-006, Spring 2022 */
+html {
+    background-color: #EAE8FF;
+}
+body h1, h2{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: #EAE8FF;
+    margin: 0;
+}
+body h1 {
+    font-size: 150%;
+    padding: 3%;
+}
+body h2 {
+    color:grey;
+    font-size: 100%;
+    height: 30%;
+    margin: 0;
+}
+body {
+    margin: 0;
+}
+img{
+    background-color: #EAE8FF;
+    float: left;
+    width: 30%;
+    padding: 3%;
+}
+div#break {
+    float: none;
+}
+/* The styles for the operation of the 2-tier navigation menu */
+#nav_menu ul {
+    list-style: none;
+    position: relative;    /* So the first submenu can be positioned within the main menu */
+}
+#nav_menu ul li {
+    float: left;
+}
+#nav_menu ul ul {
+    display: none;         /* Don't display submenu until hover of the li element */
+    position: absolute;
+    top: 100%;             /* Position the submenu at the bottom of the main menu */
+}
+#nav_menu ul ul li {
+    float: none;           /* Display the submenus vertically */
+}
+#nav_menu ul li:hover > ul {
+    display: block;        /* Display the submenu on hover of the li element */
+}
+#nav_menu > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* The styles for the formatting of the 2-tier navigation menu */
+#nav_menu ul {
+    margin: 0;
+    padding: 0;
+    background-color: #AFB5E0;
+}
+#nav_menu ul li a {
+    text-align: center;
+    font-size: 200%;
+    display: block;
+    width: 100px;
+    padding: 0.2em 0;
+    text-decoration: none;
+    background-color: #AFB5E0;
+    color: #C6CDFF;
+    font-weight: bold;
+}
+#nav_menu ul li.lastitem a {
+    width: 130px;               /* So the menu fills the 706px width of the page */
+}
+#nav_menu ul li a.current {
+    color: #9B8FFF;
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+    background-color: grey;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #EAE8FF;
+}
